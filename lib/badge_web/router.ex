@@ -17,7 +17,7 @@ defmodule BadgeWeb.Router do
   scope "/", BadgeWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", DisplayLive
   end
 
   # Other scopes may use custom stacks.

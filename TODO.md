@@ -1,0 +1,3 @@
+- Add LiveView exposing a drawing surface and two buttons
+- Add Chisel and build some drawing primitives/state handling for it
+- Implement a Canvas version of the eInk display, or LiveView

@@ -26,7 +26,6 @@ config :badge,
 
 # Configures the endpoint
 config :badge, BadgeWeb.Endpoint,
-  url: [host: "localhost"],
   adapter: Bandit.PhoenixAdapter,
   render_errors: [
     formats: [html: BadgeWeb.ErrorHTML, json: BadgeWeb.ErrorJSON],
@@ -67,7 +66,7 @@ config :logger, :console,
 config :phoenix, :json_library, Jason
 
 if Mix.target() == :host do
-  import_config "target/host.exs"
+  import_config "host.exs"
 else
   import_config "target.exs"
 end
